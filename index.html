@@ -32,9 +32,9 @@
   <main>
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="eyebrow-dot"></span><span data-en="PAKISTAN PETROL, MADE CLEARER" data-ur="PAKISTAN PETROL KI SAHI MALOOMAT">PAKISTAN PETROL, MADE CLEARER</span></p>
-        <h1 id="hero-title"><span data-en="Pakistan petrol" data-ur="Pakistan petrol">Pakistan petrol</span><br><em data-en="updates &amp; better drives." data-ur="updates aur behtar driving.">updates &amp; better drives.</em></h1>
-        <p class="hero-intro" data-en="Reliable price-update explainers and practical fuel and car-care tips for drivers across Pakistan—in English and Roman Urdu." data-ur="Pakistan bhar ke drivers ke liye petrol price updates ki wazahat aur fuel aur car-care ke practical tips—English aur Roman Urdu mein.">Reliable price-update explainers and practical fuel and car-care tips for drivers across Pakistan—in English and Roman Urdu.</p>
+        <p class="eyebrow"><span class="eyebrow-dot"></span><span data-en="FUEL PRICES &amp; BETTER DRIVES" data-ur="PETROL KI QEEMATEIN AUR BEHTAR DRIVING">FUEL PRICES &amp; BETTER DRIVES</span></p>
+        <h1 id="hero-title"><span data-en="Petrol prices" data-ur="Petrol ki qeematein">Petrol prices</span><br><em data-en="&amp; better drives." data-ur="aur behtar driving.">&amp; better drives.</em></h1>
+        <p class="hero-intro" data-en="Local-currency price references where available, clear explainers, and practical fuel and car-care tips—in English and Roman Urdu." data-ur="Jahan dastiyab hon wahan local currency mein price references, asaan wazahat, aur fuel aur car-care ke practical tips—English aur Roman Urdu mein.">Local-currency price references where available, clear explainers, and practical fuel and car-care tips—in English and Roman Urdu.</p>
         <a class="button-link" href="#articles"><span data-en="Read the latest guides" data-ur="Naye guides parhein">Read the latest guides</span><span aria-hidden="true">↘</span></a>
       </div>
       <div class="hero-art" aria-hidden="true">
@@ -67,8 +67,27 @@
 
       <aside class="price-notice" aria-label="Price verification notice" data-en-label="Price verification notice" data-ur-label="Qeemat ki tasdeeq ka paigham">
         <span class="notice-icon" aria-hidden="true">!</span>
-        <p data-en="We don't publish live petrol rates. Always verify today's price and its effective date in the latest official Government of Pakistan notification." data-ur="Hum live petrol rates publish nahi karte. Aaj ki qeemat aur us ke nafiz hone ki tareekh hamesha Government of Pakistan ke naye official notification se verify karein.">We don't publish live petrol rates. Always verify today's price and its effective date in the latest official Government of Pakistan notification.</p>
+        <p data-en="We don't republish live petrol rates here. Use a country link below for the provider's local-currency reference, then verify the current rate and legal effective date with that country's official notice or regulator." data-ur="Hum yahan live petrol rates dobara publish nahi karte. Provider ke local-currency reference ke liye neeche mulk ka link kholein, phir mojooda rate aur qanooni nafaz ki tareekh us mulk ke official notice ya regulator se verify karein.">We don't republish live petrol rates here. Use a country link below for the provider's local-currency reference, then verify the current rate and legal effective date with that country's official notice or regulator.</p>
       </aside>
+
+      <section class="country-lookup" aria-labelledby="country-lookup-title">
+        <div class="country-lookup-copy">
+          <p class="eyebrow" data-en="INDEPENDENT PRICE REFERENCE" data-ur="AZAD PRICE REFERENCE">INDEPENDENT PRICE REFERENCE</p>
+          <h3 id="country-lookup-title" data-en="Look up a country" data-ur="Mulk ke mutabiq rate dekhein">Look up a country</h3>
+          <p data-en="Choose a location from the provider's published list to open its public gasoline page. The provider reports local-currency prices for gasoline 95 or the closest local equivalent, and labels its data's last-updated date." data-ur="Provider ki published list mein se jagah chunein aur us ka public gasoline page kholein. Provider gasoline 95 ya us ke qareebi maqami mutabadil ki qeemat local currency mein aur data ki aakhri update ki tareekh batata hai.">Choose a location from the provider's published list to open its public gasoline page. The provider reports local-currency prices for gasoline 95 or the closest local equivalent, and labels its data's last-updated date.</p>
+        </div>
+        <div class="country-lookup-control">
+          <label for="country-select" data-en="Country / region" data-ur="Mulk / ilaqa">Country / region</label>
+          <select id="country-select" aria-describedby="country-coverage-note">
+            <option value="" data-en="Choose a country" data-ur="Mulk chunein">Choose a country</option>
+          </select>
+          <p class="country-result" id="country-result" aria-live="polite" data-en="Select a country to open its public source page." data-ur="Public source page kholne ke liye mulk chunein.">Select a country to open its public source page.</p>
+          <a class="country-source-link" id="country-source-link" href="https://www.globalpetrolprices.com/data_download.php" target="_blank" rel="noopener noreferrer" hidden data-en="View country price page ↗" data-ur="Mulk ka price page dekhein ↗">View country price page ↗</a>
+        </div>
+        <div class="country-coverage-note">
+          <p data-en="Coverage is limited and can change. GlobalPetrolPrices describes its API as a subscription service and reports gasoline coverage for 135 countries; its public download list may differ. This site links to public pages only and does not copy or rehost prices. Country pages may report national averages and gasoline 95 or the closest equivalent, not every local grade. A provider's last-updated date is not necessarily the official local price's effective date—check the relevant government notice before relying on a rate." data-ur="Coverage mehdood hai aur badal sakti hai. GlobalPetrolPrices apni API ko subscription service batata hai aur gasoline ke liye 135 mulkon ki coverage report karta hai; us ki public download list mukhtalif ho sakti hai. Yeh site sirf public pages ke links deti hai, qeematein copy ya rehost nahi karti. Country pages national average aur gasoline 95 ya us ke qareebi mutabadil ki qeemat de sakte hain, har local grade ki nahi. Provider ki aakhri update ki tareekh, local official qeemat ki nafaz ki tareekh zaroori nahi—rate par bharosa karne se pehle mutaliqa government notice check karein.">Coverage is limited and can change. GlobalPetrolPrices describes its API as a subscription service and reports gasoline coverage for 135 countries; its public download list may differ. This site links to public pages only and does not copy or rehost prices. Country pages may report national averages and gasoline 95 or the closest equivalent, not every local grade. A provider's last-updated date is not necessarily the official local price's effective date—check the relevant government notice before relying on a rate.</p>
+          <p class="country-source-details"><span data-en="Provider references:" data-ur="Provider ke hawalay:">Provider references:</span> <a href="https://www.globalpetrolprices.com/data_access.php" target="_blank" rel="noopener noreferrer" data-en="coverage and API details" data-ur="coverage aur API ki tafseel">coverage and API details</a> · <a href="https://www.globalpetrolprices.com/data_download.php" target="_blank" rel="noopener noreferrer" data-en="country list" data-ur="mulk ki list">country list</a></p>
+        </div>
 
       <div class="article-grid">
         <article class="article-card card-featured">
@@ -156,6 +175,12 @@
           <summary><span data-en="Which petrol is safe and right for my car?" data-ur="Meri gaari ke liye kaunsa petrol mehfooz aur munasib hai?">Which petrol is safe and right for my car?</span><span class="faq-plus" aria-hidden="true">+</span></summary>
           <div class="faq-answer">
             <p data-en="Use the fuel type and minimum octane rating specified in your owner's manual or on the fuel-door label. If the recommendation is unclear, ask the vehicle maker or an authorized service centre. Do not switch fuel types based on unverified claims." data-ur="Owner's manual ya fuel-door label par di gayi fuel type aur kam az kam octane rating istemal karein. Agar hidayat wazeh na ho to vehicle maker ya authorized service centre se poochein. Ghair-tasdeeq-shuda daawon par fuel type na badlein.">Use the fuel type and minimum octane rating specified in your owner's manual or on the fuel-door label. If the recommendation is unclear, ask the vehicle maker or an authorized service centre. Do not switch fuel types based on unverified claims.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary><span data-en="Does the country selector cover every country or show an official effective price?" data-ur="Kya country selector har mulk cover karta hai ya official nafiz qeemat dikhata hai?">Does the country selector cover every country or show an official effective price?</span><span class="faq-plus" aria-hidden="true">+</span></summary>
+          <div class="faq-answer">
+            <p data-en="No. It links to a third-party provider's public pages for locations in its published list, not every country or every local fuel grade. The provider reports local-currency gasoline prices and a last-updated date, but that date may not be the legal effective date and the data is not an official notice. Verify rates with the local government or regulator. The provider's reusable API is subscription-based, so Full Tank does not republish its price feed." data-ur="Nahi. Yeh sirf third-party provider ki published list mein shamil jagahon ke public pages ke links deta hai, har mulk ya har local fuel grade ke nahi. Provider local currency mein gasoline ki qeemat aur aakhri update ki tareekh batata hai, lekin yeh tareekh qanooni nafaz ki tareekh zaroori nahi aur data official notice nahi. Rate maqami government ya regulator se verify karein. Provider ki data dobara istemal karne wali API subscription par hai, is liye Full Tank us ka price feed publish nahi karta.">No. It links to a third-party provider's public pages for locations in its published list, not every country or every local fuel grade. The provider reports local-currency gasoline prices and a last-updated date, but that date may not be the legal effective date and the data is not an official notice. Verify rates with the local government or regulator. The provider's reusable API is subscription-based, so Full Tank does not republish its price feed.</p>
           </div>
         </details>
       </div>
