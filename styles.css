@@ -262,6 +262,17 @@ h3 { min-height: 48px; margin: 14px 0 8px; font: 600 17px/1.4 var(--font-display
 .article-body p:last-child { margin-bottom: 2px; }
 .editor-note { max-width: 1000px; margin: 25px auto 0; color: #838b82; font-size: 9px; }
 
+.faq-section { padding: 69px 10.5% 72px; background: #f1f2e9; }
+.faq-heading { max-width: 900px; }
+.faq-list { max-width: 900px; margin: 0 auto; border-top: 1px solid #daddd1; }
+.faq-item { border-bottom: 1px solid #daddd1; }
+.faq-item summary { padding: 19px 2px; display: flex; align-items: center; justify-content: space-between; gap: 18px; color: var(--ink); font: 600 14px/1.5 var(--font-display); cursor: pointer; list-style: none; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-plus { flex: 0 0 auto; color: #5e7950; font: 400 20px var(--font-body); transition: transform .2s; }
+.faq-item[open] .faq-plus { transform: rotate(45deg); }
+.faq-answer { max-width: 760px; padding: 0 32px 16px 2px; color: #68736b; font-size: 11px; line-height: 1.8; }
+.faq-answer p { margin-bottom: 0; }
+
 .about-section { max-width: 1000px; min-height: 270px; padding: 60px 0; margin: 0 auto; display: grid; grid-template-columns: 100px 1fr 50px; align-items: center; gap: 30px; }
 .about-mark { width: 76px; height: 76px; border: 1px solid #ccd3c4; border-radius: 50%; display: grid; place-items: center; color: #6e8757; font-size: 27px; }
 .about-section .eyebrow { margin-bottom: 12px; }
@@ -285,6 +296,7 @@ h3 { min-height: 48px; margin: 14px 0 8px; font: 600 17px/1.4 var(--font-display
   .hero { padding: 55px 7%; }
   .hero-stamp { right: 3%; }
   .journal-section { padding-right: 6%; padding-left: 6%; }
+  .faq-section { padding-right: 6%; padding-left: 6%; }
   .article-grid { gap: 12px; }
   .card-content { padding: 17px 14px 15px; }
   .article-meta { font-size: 6px; }
@@ -305,7 +317,11 @@ h3 { min-height: 48px; margin: 14px 0 8px; font: 600 17px/1.4 var(--font-display
   .fuel-card { transform: rotate(3deg) scale(.91); }
   .hero-stamp { right: 7%; bottom: 34px; width: 58px; height: 58px; }
   .journal-section { padding: 57px 7% 55px; }
+  .faq-section { padding: 49px 7% 54px; }
   .section-heading { align-items: start; flex-direction: column; gap: 10px; margin-bottom: 24px; }
+  .faq-heading { margin-bottom: 22px; }
+  .faq-item summary { padding: 16px 2px; font-size: 13px; }
+  .faq-answer { padding-right: 15px; font-size: 10px; }
   .price-notice { align-items: flex-start; padding: 12px; }
   h2 { font-size: 31px; }
   .article-grid { max-width: 460px; grid-template-columns: 1fr; gap: 16px; }
