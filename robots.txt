@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://roshan590-svg.github.io/petrol-blog/sitemap.xml
