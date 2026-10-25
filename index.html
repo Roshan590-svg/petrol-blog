@@ -23,7 +23,9 @@
     </a>
     <nav class="header-nav" aria-label="Main navigation" data-en-label="Main navigation" data-ur-label="Asal navigation">
       <a href="#articles" data-en="The journal" data-ur="Journal">The journal</a>
+      <a href="#helpers" data-en="Ask us" data-ur="Sawal karein">Ask us</a>
       <a href="#faqs" data-en="FAQs" data-ur="FAQs">FAQs</a>
+      <a href="#gear" data-en="Gear" data-ur="Gear">Gear</a>
       <a href="#about" data-en="About" data-ur="Hamare bare mein">About</a>
     </nav>
     <button class="language-toggle" type="button" aria-label="Switch to Roman Urdu" aria-pressed="false" data-en="Roman Urdu" data-ur="English">Roman Urdu</button>
@@ -53,7 +55,17 @@
         <span class="hero-spark spark-two">✳</span>
         <span class="hero-caption">GOOD TO GO <span>—</span> 01</span>
       </div>
-      <div class="hero-stamp"><span>DRIVE<br>CURIOUS</span><span class="stamp-star">✳</span></div>
+      <div class="hero-stamp" aria-hidden="true">
+        <svg viewBox="0 0 100 100" focusable="false">
+          <path class="sticker-outline" d="M50 4 60 8 71 7 78 16 88 21 89 33 96 42 92 53 95 64 86 72 82 84 70 87 61 96 50 92 39 96 30 87 18 84 14 72 5 64 8 53 4 42 11 33 12 21 22 16 29 7 40 8Z"/>
+          <circle class="sticker-center" cx="50" cy="50" r="34"/>
+          <path class="sticker-drop" d="M50 27c-5.8 8.8-15 18.2-15 27a15 15 0 0 0 30 0c0-8.8-9.2-18.2-15-27Z"/>
+          <path class="sticker-shine" d="M43 54a8 8 0 0 0 8 8"/>
+          <path class="sticker-spark" d="m76 18 1.8 4.2L82 24l-4.2 1.8L76 30l-1.8-4.2L70 24l4.2-1.8Z"/>
+          <circle class="sticker-dot" cx="21" cy="53" r="2"/>
+          <circle class="sticker-dot" cx="79" cy="65" r="2"/>
+        </svg>
+      </div>
     </section>
 
     <section class="journal-section" id="articles" aria-labelledby="journal-title">
@@ -74,7 +86,7 @@
         <div class="country-lookup-copy">
           <p class="eyebrow" data-en="INDEPENDENT PRICE REFERENCE" data-ur="AZAD PRICE REFERENCE">INDEPENDENT PRICE REFERENCE</p>
           <h3 id="country-lookup-title" data-en="Look up a country" data-ur="Mulk ke mutabiq rate dekhein">Look up a country</h3>
-          <p data-en="Choose a location from the provider's published list to open its public gasoline page. The provider reports local-currency prices for gasoline 95 or the closest local equivalent, and labels its data's last-updated date." data-ur="Provider ki published list mein se jagah chunein aur us ka public gasoline page kholein. Provider gasoline 95 ya us ke qareebi maqami mutabadil ki qeemat local currency mein aur data ki aakhri update ki tareekh batata hai.">Choose a location from the provider's published list to open its public gasoline page. The provider reports local-currency prices for gasoline 95 or the closest local equivalent, and labels its data's last-updated date.</p>
+          <p data-en="Choose a covered location to open its public page for a national retail gasoline reference in local currency per litre, plus the source's last-updated date. The reference is gasoline 95 or the closest local equivalent." data-ur="Covered jagah chunein aur local currency per litre mein national retail gasoline reference aur source ki aakhri update date dekhne ke liye public page kholein. Reference gasoline 95 ya us ka qareebi maqami mutabadil hota hai.">Choose a covered location to open its public page for a national retail gasoline reference in local currency per litre, plus the source's last-updated date. The reference is gasoline 95 or the closest local equivalent.</p>
         </div>
         <div class="country-lookup-control">
           <label for="country-select" data-en="Country / region" data-ur="Mulk / ilaqa">Country / region</label>
@@ -85,9 +97,10 @@
           <a class="country-source-link" id="country-source-link" href="https://www.globalpetrolprices.com/data_download.php" target="_blank" rel="noopener noreferrer" hidden data-en="View country price page ↗" data-ur="Mulk ka price page dekhein ↗">View country price page ↗</a>
         </div>
         <div class="country-coverage-note">
-          <p data-en="Coverage is limited and can change. GlobalPetrolPrices describes its API as a subscription service and reports gasoline coverage for 135 countries; its public download list may differ. This site links to public pages only and does not copy or rehost prices. Country pages may report national averages and gasoline 95 or the closest equivalent, not every local grade. A provider's last-updated date is not necessarily the official local price's effective date—check the relevant government notice before relying on a rate." data-ur="Coverage mehdood hai aur badal sakti hai. GlobalPetrolPrices apni API ko subscription service batata hai aur gasoline ke liye 135 mulkon ki coverage report karta hai; us ki public download list mukhtalif ho sakti hai. Yeh site sirf public pages ke links deti hai, qeematein copy ya rehost nahi karti. Country pages national average aur gasoline 95 ya us ke qareebi mutabadil ki qeemat de sakte hain, har local grade ki nahi. Provider ki aakhri update ki tareekh, local official qeemat ki nafaz ki tareekh zaroori nahi—rate par bharosa karne se pehle mutaliqa government notice check karein.">Coverage is limited and can change. GlobalPetrolPrices describes its API as a subscription service and reports gasoline coverage for 135 countries; its public download list may differ. This site links to public pages only and does not copy or rehost prices. Country pages may report national averages and gasoline 95 or the closest equivalent, not every local grade. A provider's last-updated date is not necessarily the official local price's effective date—check the relevant government notice before relying on a rate.</p>
+          <p data-en="Coverage is limited and can change. GlobalPetrolPrices describes its API as a subscription service and reports gasoline coverage for 135 countries; its public download list currently has fewer locations. This site links to public pages only and does not copy or rehost prices. Pages may report national averages for gasoline 95 or a local equivalent, not every fuel grade. Updates are periodic (typically weekly, with some regulated markets updated monthly), not real-time. A provider's last-updated date is not necessarily the official local price's effective date. Verify the relevant government notice before relying on a rate." data-ur="Coverage mehdood hai aur badal sakti hai. GlobalPetrolPrices apni API ko subscription service batata hai aur gasoline ke liye 135 mulkon ki coverage report karta hai; us ki public download list mein filhal is se kam jagahen hain. Yeh site sirf public pages ke links deti hai, qeematein copy ya rehost nahi karti. Pages gasoline 95 ya maqami mutabadil ki national average qeemat de sakte hain, har fuel grade ki nahi. Updates waqfay waqfay se hoti hain (aam tor par haftawar, kuch regulated markets mein mahana), real-time nahi. Provider ki aakhri update ki tareekh, official local qeemat ki nafaz ki tareekh zaroori nahi. Rate par bharosa karne se pehle mutaliqa government notice verify karein.">Coverage is limited and can change. GlobalPetrolPrices describes its API as a subscription service and reports gasoline coverage for 135 countries; its public download list currently has fewer locations. This site links to public pages only and does not copy or rehost prices. Pages may report national averages for gasoline 95 or a local equivalent, not every fuel grade. Updates are periodic (typically weekly, with some regulated markets updated monthly), not real-time. A provider's last-updated date is not necessarily the official local price's effective date. Verify the relevant government notice before relying on a rate.</p>
           <p class="country-source-details"><span data-en="Provider references:" data-ur="Provider ke hawalay:">Provider references:</span> <a href="https://www.globalpetrolprices.com/data_access.php" target="_blank" rel="noopener noreferrer" data-en="coverage and API details" data-ur="coverage aur API ki tafseel">coverage and API details</a> · <a href="https://www.globalpetrolprices.com/data_download.php" target="_blank" rel="noopener noreferrer" data-en="country list" data-ur="mulk ki list">country list</a></p>
         </div>
+      </section>
 
       <div class="article-grid">
         <article class="article-card card-featured">
@@ -144,6 +157,31 @@
       <p class="editor-note" data-en="Independent explainers, not live prices or official advice. Verify every rate against the latest official notice." data-ur="Azad explainers hain, live prices ya official advice nahi. Har rate ko naye official notice se verify karein.">Independent explainers, not live prices or official advice. Verify every rate against the latest official notice.</p>
     </section>
 
+    <section class="helper-section" id="helpers" aria-labelledby="helper-title">
+      <div class="section-heading helper-heading">
+        <div>
+          <p class="eyebrow section-eyebrow" data-en="FREE / PRIVATE / WORKS OFFLINE" data-ur="MUFT / PRIVATE / OFFLINE KAAM KARTA HAI">FREE / PRIVATE / WORKS OFFLINE</p>
+          <h2 id="helper-title" data-en="Ask Full Tank" data-ur="Full Tank se poochein">Ask Full Tank</h2>
+        </div>
+        <p class="section-note" data-en="A free, on-device guide to common fuel questions." data-ur="Fuel ke aam sawalon ke liye muft, isi device par chalne wali rehnumai.">A free, on-device guide to common fuel questions.</p>
+      </div>
+      <div class="helper-grid">
+        <section class="helper-card" aria-labelledby="faq-helper-title">
+          <p class="eyebrow" data-en="NO ACCOUNT OR INTERNET CALL" data-ur="ACCOUNT YA INTERNET CALL KI ZAROORAT NAHI">NO ACCOUNT OR INTERNET CALL</p>
+          <h3 id="faq-helper-title" data-en="FAQ helper" data-ur="FAQ helper">FAQ helper</h3>
+          <p class="helper-intro" data-en="Ask about prices, saving fuel, or choosing the right petrol. Replies come from this site's bilingual FAQs and work offline." data-ur="Qeemat, fuel bachane ya sahi petrol chunne ke bare mein poochein. Jawab isi site ke bilingual FAQs se milte hain aur offline kaam karte hain.">Ask about prices, saving fuel, or choosing the right petrol. Replies come from this site's bilingual FAQs and work offline.</p>
+          <form id="faq-helper-form">
+            <label for="faq-question" data-en="What would you like to know?" data-ur="Aap kya maloom karna chahte hain?">What would you like to know?</label>
+            <div class="helper-input-row">
+              <input id="faq-question" name="question" type="search" maxlength="240" required autocomplete="off" data-en-placeholder="e.g. How do I check today's rate?" data-ur-placeholder="Misal: Aaj ka rate kaise check karoon?" placeholder="e.g. How do I check today's rate?">
+              <button type="submit" data-en="Ask" data-ur="Poochein">Ask</button>
+            </div>
+          </form>
+          <p class="helper-response" id="faq-helper-response" role="status" aria-live="polite" data-en="Try asking about today's petrol rate, fuel saving, or the right fuel for your car." data-ur="Aaj ke petrol rate, fuel ki bachat, ya gaari ke liye sahi fuel ke bare mein poochein.">Try asking about today's petrol rate, fuel saving, or the right fuel for your car.</p>
+        </section>
+      </div>
+    </section>
+
     <section class="faq-section" id="faqs" aria-labelledby="faq-title">
       <div class="section-heading faq-heading">
         <div>
@@ -178,16 +216,45 @@
           </div>
         </details>
         <details class="faq-item">
-          <summary><span data-en="Does the country selector cover every country or show an official effective price?" data-ur="Kya country selector har mulk cover karta hai ya official nafiz qeemat dikhata hai?">Does the country selector cover every country or show an official effective price?</span><span class="faq-plus" aria-hidden="true">+</span></summary>
+          <summary><span data-en="Does the country selector cover every country or update prices in real time?" data-ur="Kya country selector har mulk cover karta hai ya qeematein real-time update karta hai?">Does the country selector cover every country or update prices in real time?</span><span class="faq-plus" aria-hidden="true">+</span></summary>
           <div class="faq-answer">
-            <p data-en="No. It links to a third-party provider's public pages for locations in its published list, not every country or every local fuel grade. The provider reports local-currency gasoline prices and a last-updated date, but that date may not be the legal effective date and the data is not an official notice. Verify rates with the local government or regulator. The provider's reusable API is subscription-based, so Full Tank does not republish its price feed." data-ur="Nahi. Yeh sirf third-party provider ki published list mein shamil jagahon ke public pages ke links deta hai, har mulk ya har local fuel grade ke nahi. Provider local currency mein gasoline ki qeemat aur aakhri update ki tareekh batata hai, lekin yeh tareekh qanooni nafaz ki tareekh zaroori nahi aur data official notice nahi. Rate maqami government ya regulator se verify karein. Provider ki data dobara istemal karne wali API subscription par hai, is liye Full Tank us ka price feed publish nahi karta.">No. It links to a third-party provider's public pages for locations in its published list, not every country or every local fuel grade. The provider reports local-currency gasoline prices and a last-updated date, but that date may not be the legal effective date and the data is not an official notice. Verify rates with the local government or regulator. The provider's reusable API is subscription-based, so Full Tank does not republish its price feed.</p>
+            <p data-en="No. A current free source we verified does not provide a legally reusable, no-cost live API for every country. GlobalPetrolPrices advertises a subscription API for 135 countries; its public list has fewer locations. Its public pages show local-currency gasoline references, usually updated weekly and monthly in some regulated markets—not real-time rates or every local grade. We link to those pages instead of copying prices. Check each page's source update date and confirm the legal effective rate with the local government or regulator." data-ur="Nahi. Humein aisa muft aur legally reusable live source nahi mila jo har mulk ki API de. GlobalPetrolPrices 135 mulkon ke liye subscription API deta hai; us ki public list mein is se kam jagahen hain. Public pages local currency mein gasoline references dikhate hain, aam tor par haftawar aur kuch regulated markets mein mahana update hote hain—real-time rates ya har local grade nahi. Hum qeematein copy karne ke bajaye un pages ke links dete hain. Har page ki source update date dekhein aur qanooni nafiz rate maqami government ya regulator se confirm karein.">No. A current free source we verified does not provide a legally reusable, no-cost live API for every country. GlobalPetrolPrices advertises a subscription API for 135 countries; its public list has fewer locations. Its public pages show local-currency gasoline references, usually updated weekly and monthly in some regulated markets—not real-time rates or every local grade. We link to those pages instead of copying prices. Check each page's source update date and confirm the legal effective rate with the local government or regulator.</p>
           </div>
         </details>
       </div>
     </section>
 
+    <section class="gear-section" id="gear" aria-labelledby="gear-title">
+      <div class="section-heading gear-heading">
+        <div>
+          <p class="eyebrow section-eyebrow" data-en="USEFUL PICKS / NO LINKS ACTIVE" data-ur="KAAM KI CHEEZEIN / ABHI LINKS NAHI">USEFUL PICKS / NO LINKS ACTIVE</p>
+          <h2 id="gear-title" data-en="Gear for the road" data-ur="Safar ke liye gear">Gear for the road</h2>
+        </div>
+        <p class="section-note" data-en="A space for carefully chosen car and fuel accessories." data-ur="Car aur fuel accessories ke soch samajh kar chune gaye mashwaron ke liye jagah.">A space for carefully chosen car and fuel accessories.</p>
+      </div>
+      <div class="gear-card">
+        <span class="gear-icon" aria-hidden="true">✳</span>
+        <div>
+          <h3 data-en="Recommendations are being prepared" data-ur="Mushaware tayyar kiye ja rahe hain">Recommendations are being prepared</h3>
+          <p data-en="There are no product links, affiliate IDs, or tracking on this site yet. After joining a free affiliate program, we can add relevant car-care and driving accessories here using its approved links." data-ur="Is site par abhi product links, affiliate IDs, ya tracking nahi hai. Kisi muft affiliate program mein shamil hone ke baad, us ke approved links se car-care aur driving accessories yahan shamil ki ja sakti hain.">There are no product links, affiliate IDs, or tracking on this site yet. After joining a free affiliate program, we can add relevant car-care and driving accessories here using its approved links.</p>
+          <p class="affiliate-disclosure" data-en="Affiliate disclosure: if affiliate links are added later, Full Tank may earn a commission at no extra cost to you. Any such links will be clearly labelled; recommendations will not change the need to check that a product suits your vehicle." data-ur="Affiliate wazahat: agar baad mein affiliate links shamil kiye gaye, to Full Tank ko aap ke liye izafi kharch ke baghair commission mil sakta hai. Aise links ko wazeh label kiya jayega; phir bhi product apni gaari ke liye munasib hona check karein.">Affiliate disclosure: if affiliate links are added later, Full Tank may earn a commission at no extra cost to you. Any such links will be clearly labelled; recommendations will not change the need to check that a product suits your vehicle.</p>
+        </div>
+        <span class="gear-status" data-en="SETUP NEEDED" data-ur="SETUP DARKAR">SETUP NEEDED</span>
+      </div>
+    </section>
+
     <section class="about-section" id="about" aria-labelledby="about-title">
-      <div class="about-mark" aria-hidden="true">✳</div>
+      <div class="about-mark" aria-hidden="true">
+        <svg viewBox="0 0 100 100" focusable="false">
+          <path class="sticker-outline" d="M50 4 60 8 71 7 78 16 88 21 89 33 96 42 92 53 95 64 86 72 82 84 70 87 61 96 50 92 39 96 30 87 18 84 14 72 5 64 8 53 4 42 11 33 12 21 22 16 29 7 40 8Z"/>
+          <circle class="sticker-center" cx="50" cy="50" r="34"/>
+          <path class="sticker-drop" d="M50 27c-5.8 8.8-15 18.2-15 27a15 15 0 0 0 30 0c0-8.8-9.2-18.2-15-27Z"/>
+          <path class="sticker-shine" d="M43 54a8 8 0 0 0 8 8"/>
+          <path class="sticker-spark" d="m76 18 1.8 4.2L82 24l-4.2 1.8L76 30l-1.8-4.2L70 24l4.2-1.8Z"/>
+          <circle class="sticker-dot" cx="21" cy="53" r="2"/>
+          <circle class="sticker-dot" cx="79" cy="65" r="2"/>
+        </svg>
+      </div>
       <div>
         <p class="eyebrow" data-en="ABOUT FULL TANK" data-ur="FULL TANK KE BARE MEIN">ABOUT FULL TANK</p>
         <h2 id="about-title" data-en="Updates and useful tips for every drive." data-ur="Har drive ke liye updates aur kaam ke tips.">Updates and useful tips for every drive.</h2>

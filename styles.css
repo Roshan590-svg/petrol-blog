@@ -182,20 +182,16 @@ h1 em { color: #54734d; font-style: normal; font-weight: 400; }
   bottom: 43px;
   width: 68px;
   height: 68px;
-  border: 1px solid #cad1bf;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  color: #647558;
-  font-size: 7px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  line-height: 1.6;
-  text-align: center;
   transform: rotate(10deg);
 }
 
-.stamp-star { position: absolute; top: -9px; right: -3px; color: #8aa35e; font-size: 15px; }
+.hero-stamp svg { display: block; width: 100%; height: 100%; overflow: visible; filter: drop-shadow(0 5px 5px rgba(34, 59, 46, .13)); }
+.sticker-outline { fill: #c9dfaa; stroke: #75925d; stroke-width: 1.5; stroke-linejoin: round; }
+.sticker-center { fill: #f8f7ef; stroke: #75925d; stroke-width: 1.2; stroke-dasharray: 2 2; }
+.sticker-drop { fill: #54734d; }
+.sticker-shine { fill: none; stroke: #dce9ca; stroke-width: 2; stroke-linecap: round; }
+.sticker-spark { fill: #789751; }
+.sticker-dot { fill: #789751; }
 
 .journal-section { padding: 77px 10.5% 75px; background: var(--white); }
 .section-heading { max-width: 1000px; margin: 0 auto 33px; display: flex; align-items: end; justify-content: space-between; }
@@ -288,6 +284,20 @@ h3 { min-height: 48px; margin: 14px 0 8px; font: 600 17px/1.4 var(--font-display
 .article-body p:last-child { margin-bottom: 2px; }
 .editor-note { max-width: 1000px; margin: 25px auto 0; color: #838b82; font-size: 9px; }
 
+.helper-section { padding: 68px 10.5% 72px; background: var(--white); }
+.helper-heading { max-width: 900px; }
+.helper-grid { max-width: 900px; margin: 0 auto; }
+.helper-card { padding: 24px; border: 1px solid #e4e7dc; border-radius: 5px; background: #fbfcf8; }
+.helper-card .eyebrow { margin-bottom: 9px; }
+.helper-card h3 { min-height: 0; margin: 0 0 9px; font: 600 21px/1.4 var(--font-display); }
+.helper-intro { max-width: 600px; margin-bottom: 20px; color: #68736b; font-size: 11px; line-height: 1.7; }
+.helper-card form label { display: block; margin-bottom: 7px; color: #526059; font-size: 10px; font-weight: 600; }
+.helper-input-row { display: flex; gap: 8px; }
+.helper-input-row input { min-width: 0; min-height: 42px; flex: 1; padding: 9px 12px; border: 1px solid #cfd3c8; border-radius: 4px; background: white; color: var(--ink); font: 12px var(--font-body); }
+.helper-input-row button { min-width: 78px; padding: 0 18px; border: 0; border-radius: 4px; background: var(--deep-green); color: white; font: 600 11px var(--font-body); cursor: pointer; }
+.helper-input-row button:hover { background: #355b4b; }
+.helper-response { min-height: 44px; padding: 12px 14px; margin: 15px 0 0; border-left: 2px solid #8eae5c; background: #f0f3e9; color: #53614f; font-size: 11px; line-height: 1.75; }
+
 .faq-section { padding: 69px 10.5% 72px; background: #f1f2e9; }
 .faq-heading { max-width: 900px; }
 .faq-list { max-width: 900px; margin: 0 auto; border-top: 1px solid #daddd1; }
@@ -299,8 +309,18 @@ h3 { min-height: 48px; margin: 14px 0 8px; font: 600 17px/1.4 var(--font-display
 .faq-answer { max-width: 760px; padding: 0 32px 16px 2px; color: #68736b; font-size: 11px; line-height: 1.8; }
 .faq-answer p { margin-bottom: 0; }
 
+.gear-section { padding: 68px 10.5% 72px; background: var(--white); }
+.gear-heading { max-width: 900px; }
+.gear-card { max-width: 900px; padding: 22px 24px; margin: 0 auto; border: 1px solid #e4e7dc; border-radius: 5px; background: #fbfcf8; display: grid; grid-template-columns: 38px 1fr auto; align-items: start; gap: 16px; }
+.gear-icon { width: 36px; height: 36px; border: 1px solid #b9cba7; border-radius: 50%; display: grid; place-items: center; color: #54734d; font-size: 18px; }
+.gear-card h3 { min-height: 0; margin: 0 0 8px; font: 600 17px/1.4 var(--font-display); }
+.gear-card p { margin: 0; color: #68736b; font-size: 10px; line-height: 1.75; }
+.gear-card .affiliate-disclosure { padding-top: 11px; margin-top: 11px; border-top: 1px solid #e4e7dc; }
+.gear-status { padding: 6px 8px; border-radius: 20px; background: #edf1e6; color: #526b45; font-size: 8px; font-weight: 700; letter-spacing: .6px; white-space: nowrap; }
+
 .about-section { max-width: 1000px; min-height: 270px; padding: 60px 0; margin: 0 auto; display: grid; grid-template-columns: 100px 1fr 50px; align-items: center; gap: 30px; }
-.about-mark { width: 76px; height: 76px; border: 1px solid #ccd3c4; border-radius: 50%; display: grid; place-items: center; color: #6e8757; font-size: 27px; }
+.about-mark { width: 76px; height: 76px; display: grid; place-items: center; }
+.about-mark svg { display: block; width: 100%; height: 100%; }
 .about-section .eyebrow { margin-bottom: 12px; }
 .about-section h2 { max-width: 570px; margin-bottom: 12px; font-size: 27px; line-height: 1.3; }
 .about-section p:last-child { max-width: 570px; margin-bottom: 0; color: #6e7971; font-size: 11px; line-height: 1.8; }
@@ -322,7 +342,9 @@ h3 { min-height: 48px; margin: 14px 0 8px; font: 600 17px/1.4 var(--font-display
   .hero { padding: 55px 7%; }
   .hero-stamp { right: 3%; }
   .journal-section { padding-right: 6%; padding-left: 6%; }
+  .helper-section { padding-right: 6%; padding-left: 6%; }
   .faq-section { padding-right: 6%; padding-left: 6%; }
+  .gear-section { padding-right: 6%; padding-left: 6%; }
   .country-lookup { padding: 18px; grid-template-columns: 1fr; }
   .country-lookup-control { max-width: 420px; }
   .country-coverage-note { grid-column: 1; }
@@ -346,12 +368,19 @@ h3 { min-height: 48px; margin: 14px 0 8px; font: 600 17px/1.4 var(--font-display
   .fuel-card { transform: rotate(3deg) scale(.91); }
   .hero-stamp { right: 7%; bottom: 34px; width: 58px; height: 58px; }
   .journal-section { padding: 57px 7% 55px; }
+  .helper-section { padding: 49px 7% 54px; }
   .faq-section { padding: 49px 7% 54px; }
+  .gear-section { padding: 49px 7% 54px; }
   .section-heading { align-items: start; flex-direction: column; gap: 10px; margin-bottom: 24px; }
   .faq-heading { margin-bottom: 22px; }
   .faq-item summary { padding: 16px 2px; font-size: 13px; }
   .faq-answer { padding-right: 15px; font-size: 10px; }
   .price-notice { align-items: flex-start; padding: 12px; }
+  .helper-card { padding: 18px; }
+  .gear-card { padding: 18px; grid-template-columns: 32px 1fr; gap: 12px; }
+  .gear-icon { width: 32px; height: 32px; }
+  .gear-status { grid-column: 2; justify-self: start; }
+  .helper-input-row button { min-width: 65px; padding: 0 12px; }
   .country-lookup { padding: 16px; }
   h2 { font-size: 31px; }
   .article-grid { max-width: 460px; grid-template-columns: 1fr; gap: 16px; }
